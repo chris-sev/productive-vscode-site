@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { load, trackPageview } from "fathom-client";
 import "tailwindcss/tailwind.css";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
