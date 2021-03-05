@@ -1,24 +1,33 @@
 export default function SiteHeader() {
   return (
-    <nav className="text-gray-800">
-      <div className="px-8 max-w-7xl mx-auto flex justify-between items-center">
+    <nav className="py-10 text-gray-700">
+      <div className="px-8 flex justify-between items-center">
         {/* logo */}
-        <div className="flex space-x-1 items-end">
+        <div className="flex items-center">
           <a
             href="#"
-            className="block py-5 px-4 bebas font-extrabold text-4xl text-black"
+            className="block pt-6 pb-4 px-4 fancy font-extrabold tracking-tighter text-2xl leading-none text-black"
           >
-            Productive <strong className="text-red-600">VS Code</strong>
+            Productive{" "}
+            <strong className="text-transparent bg-gradient-to-br bg-clip-text from-indigo-600 to-purple-700">
+              VS Code
+            </strong>
           </a>
-          <span className="block py-5 text-sm text-gray-500">
-            A Better Dev Course
-          </span>
         </div>
 
         {/* nav */}
-        <div className="flex">
-          <a href="https://learn.better.dev/login" className="block py-5 px-4 ">
+        <div className="flex space-x-2 items-center">
+          <a
+            href="https://learn.better.dev/login"
+            className="block py-5 px-4 text-gray-700"
+          >
             Login
+          </a>
+          <a
+            href="https://learn.better.dev/login"
+            className="block py-2 px-4 rounded-lg bg-gradient-to-br from-indigo-400 to-purple-700 text-white"
+          >
+            Buy Course
           </a>
         </div>
       </div>

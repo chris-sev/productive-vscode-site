@@ -1,5 +1,6 @@
 import Head from "next/head";
 import SiteHeader from "../components/SiteHeader";
+import SiteHero from "../components/SiteHero";
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
 
       <SiteHeader />
 
-      <main></main>
+      <main>
+        <SiteHero />
+      </main>
 
       <footer></footer>
     </>

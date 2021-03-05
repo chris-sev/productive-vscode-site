@@ -1,5 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700;800&display=swap");
 
-.bebas {
-  font-family: "Bebas Neue", cursive;
+.fancy {
+  font-family: "Comfortaa", cursive;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-vscode {
+    width: 1050px;
+  }
 }
