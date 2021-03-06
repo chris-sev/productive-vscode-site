@@ -15,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <PPPBar />
       <SiteHeader />
 
       <main>
