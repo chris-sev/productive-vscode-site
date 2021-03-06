@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-// import fetchPPP from "purchasing-power-parity";
-// import { useDetectAdBlock } from "adblock-detect-react";
-// import queryString from "query-string";
+import fetchPPP from "purchasing-power-parity";
+import { useDetectAdBlock } from "adblock-detect-react";
+import queryString from "query-string";
 
 const coupons = {
   10: "PPP-10B",
