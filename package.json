@@ -10,6 +10,8 @@
   "dependencies": {
     "fathom-client": "^3.0.0",
     "next": "10.0.7",
+    "purchasing-power-parity": "^2.0.2",
+    "query-string": "^6.14.1",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },

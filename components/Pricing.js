@@ -1,4 +1,4 @@
-export default function Pricing() {
+export default function Pricing({ coupon, discount }) {
   function trackForFathom() {
     try {
       const price = discount ? (22 * ((100 - discount) / 100)).toFixed(2) : 22;
@@ -6,5 +6,5 @@ export default function Pricing() {
     } catch (e) {}
   }
 
-  return <div></div>;
+  return <div>pricing</div>;
 }
