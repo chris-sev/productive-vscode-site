@@ -72,8 +72,8 @@ export default function PPPBar() {
 
   if (adBlockDetected)
     return (
-      <div className="bg-black text-gray-100">
-        <div className="px-8 py-5 text-center">
+      <div className="bg-gray-800 text-gray-300">
+        <div className="px-8 py-3 text-sm text-center">
           Hey! <span role="img">👋</span> I've got automatic{" "}
           <strong className="font-extrabold">Purchasing Power Parity</strong>{" "}
           turned on for this course. Sometimes ad blocker stops it though.{" "}

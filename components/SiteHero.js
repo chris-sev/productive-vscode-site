@@ -42,8 +42,8 @@ export default function SiteHero() {
               src="/vscode.png"
               layout="fill"
               objectPosition="left"
-              sizes="700px"
-              className="rounded-tl-lg rounded-br-lg object-cover"
+              sizes="(max-width: 1280px) 1vw, 1vw"
+              className="rounded-tl-lg rounded-br-lg object-fit"
             />
           </div>
           {/* </div> */}
