@@ -2,7 +2,7 @@ import Head from "next/head";
 import PPPBar, { usePPP } from "../components/PPPBar";
 import SiteHeader from "../components/SiteHeader";
 import SiteHero from "../components/SiteHero";
-import HideAndShow from "../components/HideAndShow";
+import VSCode from "../components/VSCode/VSCode";
 import Pricing from "../components/Pricing";
 
 export default function Home() {
@@ -18,9 +18,9 @@ export default function Home() {
       <PPPBar />
       <SiteHeader />
 
-      <main>
+      <main className="space-y-20">
         <SiteHero />
-        <HideAndShow />
+        <VSCode />
         <Pricing coupon={coupon} discount={discount} />
       </main>
 

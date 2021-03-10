@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function SiteHero() {
   return (
     <div className="px-8">
-      <div className="relative bg-gradient-to-br from-indigo-600 via-purple-700 to-purple-900 rounded-lg flex">
+      <div className="relative bg-gradient-to-br from-indigo-600 via-purple-700 to-purple-900 rounded-lg overflow-hidden">
         {/* content */}
         <div className="w-full lg:grid lg:grid-cols-2 gap-x-10">
-          <div className="flex flex-col justify-center p-20 space-y-12">
+          <div className="flex flex-col justify-center p-20 space-y-8">
             {/* giant title */}
             <h1 className="leading-none text-white font-extrabold fancy">
               <span className="block text-xl lg:text-2xl mb-3 lg:mb-5 uppercase tracking-wider text-purple-200">
@@ -37,13 +37,14 @@ export default function SiteHero() {
 
           {/* cool vs code preview with buttons */}
           {/* <div className="absolute top-20 -bottom-10 -right-10 shadow-2xl"> */}
-          <div className="relative min-h-screen w-full mt-20 rounded-tl-lg rounded-br-lg">
+          <div className="relative h-96 w-full self-end mt-20 rounded-tl-lg rounded-br-lg">
             <Image
               src="/vscode.png"
               layout="fill"
               objectPosition="left"
-              sizes="(max-width: 1280px) 1vw, 1vw"
-              className="rounded-tl-lg rounded-br-lg object-fit"
+              objectFit="cover"
+              sizes="50vw"
+              className="rounded-tl-lg rounded-br-lg"
             />
           </div>
           {/* </div> */}
