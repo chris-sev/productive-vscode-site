@@ -1,12 +1,12 @@
 export default function VSCodeActivityBar() {
   return (
-    <div className="h-full bg-gray-700 text-gray-500 flex flex-col justify-between p-2 text-center">
+    <div className="h-full bg-gray-700 text-gray-500 flex flex-col justify-between py-2 text-center">
       {/* top icons */}
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col">
         {/* files */}
-        <button className="w-full text-center flex justify-center">
+        <button className="w-full text-center flex justify-center p-2 cursor-pointer hover:text-gray-300">
           <svg
-            className="w-7 h-7"
+            className="w-8 h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -22,9 +22,9 @@ export default function VSCodeActivityBar() {
         </button>
 
         {/* search */}
-        <button className="w-full text-center flex justify-center">
+        <button className="w-full text-center flex justify-center p-2 cursor-pointer hover:text-gray-300">
           <svg
-            className="w-7 h-7"
+            className="w-8 h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -40,9 +40,9 @@ export default function VSCodeActivityBar() {
         </button>
 
         {/* git */}
-        <button className="w-full text-center flex justify-center">
+        <button className="w-full text-center flex justify-center p-2 cursor-pointer hover:text-gray-300">
           <svg
-            className="w-7 h-7"
+            className="w-8 h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -58,14 +58,14 @@ export default function VSCodeActivityBar() {
         </button>
 
         {/* project */}
-        <button className="w-full text-center flex justify-center"></button>
+        <button className="w-full text-center flex justify-center p-2 cursor-pointer hover:text-gray-300"></button>
       </div>
 
       {/* bottom icons */}
       <div>
-        <button className="w-full text-center flex justify-center">
+        <button className="w-full text-center flex justify-center p-2 cursor-pointer hover:text-gray-300">
           <svg
-            className="w-7 h-7"
+            className="w-8 h-8"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"

@@ -20,7 +20,12 @@ export default function Home() {
 
       <main className="space-y-20">
         <SiteHero />
-        <VSCode />
+
+        <div>
+          buttons to show off multiple workflows
+          <VSCode />
+        </div>
+
         <Pricing coupon={coupon} discount={discount} />
       </main>
 
