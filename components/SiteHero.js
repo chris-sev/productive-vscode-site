@@ -28,7 +28,7 @@ export default function SiteHero() {
           {/* buy now */}
           <a
             href="#"
-            className="inline-block text-lg lg:text-2xl py-3 lg:py-5 px-6 rounded-lg bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-black hover:shadow-2xl transition duration-300"
+            className="inline-block text-lg lg:text-2xl py-4 lg:py-6 px-6 rounded-lg bg-gradient-to-br from-yellow-400 to-yellow-500 hover:bg-yellow-300 text-black hover:text-black hover:shadow-2xl transition duration-300"
           >
             Buy the Course
           </a>

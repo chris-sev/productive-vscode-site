@@ -2,6 +2,7 @@ import Head from "next/head";
 import PPPBar, { usePPP } from "../components/PPPBar";
 import SiteHeader from "../components/SiteHeader";
 import SiteHero from "../components/SiteHero";
+import BigReasons from "../components/BigReasons";
 import VSCode from "../components/VSCode/VSCode";
 import Pricing from "../components/Pricing";
 
@@ -18,15 +19,15 @@ export default function Home() {
       <PPPBar />
       <SiteHeader />
 
-      <main className="space-y-20">
+      <main className="space-y-48">
         <SiteHero />
+        <BigReasons />
+        <VSCode />
 
-        <div>
-          buttons to show off multiple workflows
-          <VSCode />
-        </div>
-
+        {/* what youll learn */}
         <Pricing coupon={coupon} discount={discount} />
+        {/* whats in the course */}
+        {/* faq */}
       </main>
 
       <footer></footer>

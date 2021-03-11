@@ -24,7 +24,7 @@ export default function VSCodeExplorer() {
       {files.map(({ name, icon, isFolder, files }, index) => (
         <button
           key={index}
-          className="flex w-full space-x-2 py-0.5 px-5 cursor-pointer hover:bg-gray-700"
+          className="flex w-full space-x-2 py-0.5 px-5 focus:outline-none cursor-pointer hover:bg-gray-700"
         >
           {isFolder && <span>&gt;</span>}
           {icon && <span>icon</span>}
