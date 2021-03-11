@@ -19,7 +19,7 @@ export default function Home() {
       <PPPBar />
       <SiteHeader />
 
-      <main className="space-y-48">
+      <main className="space-y-56">
         <SiteHero />
         <BigReasons />
         <VSCode />

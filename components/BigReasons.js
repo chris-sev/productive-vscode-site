@@ -9,22 +9,22 @@ export default function BigReasons() {
           The best developers know their{" "}
           <span className="text-blue-600">VS Code</span> from back to front.
         </h2>
-        <p className="text-gray-700 text-3xl">
-          Being an expert in the tool makes us better in the craft.
+        <p className="text-gray-700 text-5xl">
+          Invest in your editor and you'll:
         </p>
       </div>
 
-      <div className="relative space-y-8">
-        <h3 className="font-extrabold text-5xl bg-gradient-to-br from-gray-800 to-black text-transparent bg-clip-text">
-          Faster
+      <div className="relative space-y-12">
+        <h3 className="font-extrabold text-8xl bg-gradient-to-br from-green-600 to-green-800 text-transparent bg-clip-text">
+          Code Faster
         </h3>
 
-        <h3 className="font-extrabold text-5xl bg-gradient-to-br from-gray-800 to-black text-transparent bg-clip-text">
-          Optimized
+        <h3 className="font-extrabold text-8xl bg-gradient-to-br from-red-600 to-red-800 text-transparent bg-clip-text">
+          Write Less Errors
         </h3>
 
-        <h3 className="font-extrabold text-5xl bg-gradient-to-br from-gray-800 to-black text-transparent bg-clip-text">
-          Better
+        <h3 className="font-extrabold text-8xl bg-gradient-to-br from-blue-600 to-blue-800 text-transparent bg-clip-text">
+          Get More Done
         </h3>
       </div>
     </div>
