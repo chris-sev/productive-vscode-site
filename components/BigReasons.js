@@ -14,17 +14,26 @@ export default function BigReasons() {
         </p>
       </div>
 
-      <div className="relative space-y-12">
-        <h3 className="font-extrabold text-8xl bg-gradient-to-br from-green-600 to-green-800 text-transparent bg-clip-text">
-          Code Faster
+      <div className="relative space-y-12 text-gray-700">
+        <h3 className="font-extrabold text-8xl ">
+          Code{" "}
+          <span className="bg-gradient-to-br from-green-600 to-green-800 text-transparent bg-clip-text">
+            Faster
+          </span>
         </h3>
 
-        <h3 className="font-extrabold text-8xl bg-gradient-to-br from-red-600 to-red-800 text-transparent bg-clip-text">
-          Write Less Errors
+        <h3 className="font-extrabold text-8xl">
+          Write{" "}
+          <span className="bg-gradient-to-br from-red-600 to-red-800 text-transparent bg-clip-text">
+            Less Errors
+          </span>
         </h3>
 
-        <h3 className="font-extrabold text-8xl bg-gradient-to-br from-blue-600 to-blue-800 text-transparent bg-clip-text">
-          Get More Done
+        <h3 className="font-extrabold text-8xl">
+          Get More{" "}
+          <span className="bg-gradient-to-br from-blue-600 to-blue-800 text-transparent bg-clip-text">
+            Done
+          </span>
         </h3>
       </div>
     </div>
