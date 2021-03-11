@@ -5,6 +5,7 @@ import SiteHero from "../components/SiteHero";
 import BigReasons from "../components/BigReasons";
 import VSCode from "../components/VSCode/VSCode";
 import Pricing from "../components/Pricing";
+import TimeIsMoney from "../components/TimeIsMoney";
 
 export default function Home() {
   const { coupon, discount, country } = usePPP();
@@ -23,6 +24,7 @@ export default function Home() {
         <SiteHero />
         <BigReasons />
         <VSCode />
+        <TimeIsMoney />
 
         {/* what youll learn */}
         <Pricing coupon={coupon} discount={discount} />

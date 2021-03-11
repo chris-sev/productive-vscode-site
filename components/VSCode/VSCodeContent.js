@@ -7,10 +7,15 @@ export default function VSCodeContent() {
       style={{ background: "#1e1e1e" }}
     >
       <Editor
-        height="400px"
+        height="700px"
         theme="vs-dark"
         defaultLanguage="javascript"
         defaultValue="// some comment"
+        options={{
+          minimap: { enabled: false },
+          fontSize: 24,
+          lineHeight: 50,
+        }}
       />
     </div>
   );
