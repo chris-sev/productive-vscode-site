@@ -26,7 +26,7 @@ function round(value) {
 /**
  * Get a coupon code and discount rate based on users country
  */
-export function usePPP() {
+export function usePPP(originalPrice) {
   const [coupon, setCoupon] = useState(null);
   const [discount, setDiscount] = useState(null); // in percentage // number
   const [country, setCountry] = useState(null);
@@ -63,12 +63,20 @@ export function usePPP() {
     }
   }, []);
 
-  return { coupon, discount, country };
+  const finalPrice = discount
+    ? (originalPrice * ((100 - discount) / 100)).toFixed(2)
+    : originalPrice;
+
+  return { coupon, discount, country, originalPrice, finalPrice };
 }
 
-export default function PPPBar() {
+/**
+ * The top bar =================================================================
+ * =============================================================================
+ */
+export default function PPPBar({ price }) {
   const adBlockDetected = useDetectAdBlock();
-  const { coupon, discount, country } = usePPP();
+  const { coupon, discount, country, finalPrice } = usePPP(price);
 
   if (adBlockDetected)
     return (
