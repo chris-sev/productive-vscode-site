@@ -8,7 +8,7 @@ import Pricing from "../components/Pricing";
 import TimeIsMoney from "../components/TimeIsMoney";
 
 export default function Home() {
-  const { coupon, discount, country } = usePPP();
+  const { coupon, discount, country, finalPrice } = usePPP(35);
 
   return (
     <>
@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <PPPBar />
+      <PPPBar price={35} />
       <SiteHeader />
 
       <main className="space-y-56">
@@ -27,7 +27,7 @@ export default function Home() {
         <TimeIsMoney />
 
         {/* what youll learn */}
-        <Pricing coupon={coupon} discount={discount} />
+        <Pricing coupon={coupon} discount={discount} price={finalPrice} />
         {/* whats in the course */}
         {/* faq */}
       </main>
