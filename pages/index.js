@@ -30,6 +30,7 @@ export default function Home() {
         <Pricing coupon={coupon} discount={discount} price={finalPrice} />
         {/* whats in the course */}
         {/* faq */}
+        {/* who am i */}
       </main>
 
       <footer></footer>
