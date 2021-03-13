@@ -41,7 +41,7 @@ export function usePPP(originalPrice) {
       if (urlCoupon === "TO-THE-MOON") setDiscount(75);
       if (urlCoupon === "GOOD-VIBES") setDiscount(100);
       if (urlCoupon === "LRVL-NWS") setDiscount(15);
-      if (urlCoupon === "LETS-GO") setDiscount(25);
+      if (urlCoupon === "LETS-GO") setDiscount(15);
 
       return setCoupon(urlCoupon);
     }
