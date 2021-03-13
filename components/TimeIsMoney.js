@@ -2,40 +2,77 @@ import { useState } from "react";
 
 export default function TimeIsMoney() {
   const [hourlyRate, setHourlyRate] = useState(100);
-  const [timeSaved, setTimeSaved] = useState(30);
+  const [minutesSavedDaily, setMinutesSavedDaily] = useState(10); // in minutes
+
+  const hoursSavedPerYear = ((minutesSavedDaily * 261) / 60)
+    .toFixed(1)
+    .toLocaleString();
+  const moneySavedPerYear = (hoursSavedPerYear * hourlyRate).toLocaleString();
 
   return (
-    <div className="relative px-8 max-w-7xl mx-auto">
+    <div className="relative">
+      <div className="absolute inset-x-0 top-56 w-full h-96 transform -skew-y-6 bg-green-500"></div>
+
       {/* header */}
-      <div className="space-y-5 text-center">
+      <div className="relative space-y-5 text-center px-8">
         <h2 className="text-black text-8xl font-extrabold">
           Your Time is Worth <Money />
         </h2>
         <p className="text-gray-600 text-4xl">
           Save{" "}
-          <strong className="font-bold text-gray-800">valuable time</strong>{" "}
-          every day with this course.
+          <strong className="font-bold text-gray-800">
+            {hoursSavedPerYear} hours
+          </strong>{" "}
+          (
+          <strong className="font-bold text-gray-800">
+            ${moneySavedPerYear}
+          </strong>
+          ) yearly with this course.
         </p>
       </div>
 
-      {/* content */}
-      <div>
-        My hourly rate is{" "}
-        <input
-          type="number"
-          value={hourlyRate}
-          onChange={(e) => setHourlyRate(e.target.value)}
-        />
-        .
-      </div>
-      <div>
-        This course will save me{" "}
-        <input
-          type="number"
-          value={timeSaved}
-          onChange={(e) => setTimeSaved(e.target.value)}
-        />{" "}
-        minutes every day.
+      {/* calculator */}
+      <div className="relative mt-20 px-8 max-w-7xl mx-auto text-center grid grid-cols-11 gap-8">
+        <div className="col-span-3 space-y-5">
+          <input
+            className="block w-full py-5 px-10 bg-white focus:outline-none focus:bg-green-200 rounded-2xl text-center text-9xl shadow-2xl transform rotate-2"
+            type="text"
+            value={hourlyRate}
+            onChange={(e) => setHourlyRate(e.target.value)}
+          />
+          <div className="text-xl text-green-800 font-bold">My Hourly Rate</div>
+        </div>
+        <div className="font-mono font-extrabold flex items-center justify-center text-9xl bg-gradient-to-br from-purple-500 to-purple-900 text-transparent bg-clip-text pb-10">
+          *
+        </div>
+        <div className="col-span-3 space-y-5">
+          <input
+            className="block w-full py-5 px-10 bg-white focus:outline-none focus:bg-green-200 rounded-2xl text-center text-9xl shadow-2xl transform -rotate-2"
+            type="text"
+            value={minutesSavedDaily}
+            onChange={(e) => setMinutesSavedDaily(e.target.value)}
+          />
+          <div className="text-xl text-green-800 font-bold">
+            Minutes Saved Daily
+          </div>
+        </div>
+        <div className="font-mono font-extrabold flex items-center justify-center text-9xl bg-gradient-to-br from-purple-500 to-purple-900 text-transparent bg-clip-text pb-10 transform -rotate-2">
+          =
+        </div>
+        <div className="col-span-3 relative space-y-5 flex flex-col justify-center items-center transform rotate-2">
+          <div className="text-5xl text-green-100 font-extrabold">
+            {hoursSavedPerYear} <span className="text-green-400">hours</span>
+          </div>
+          <div className="text-5xl text-green-100 font-extrabold">
+            ${moneySavedPerYear}
+          </div>
+          <div className="text-xl text-green-800 font-bold">
+            Saved Per Year!
+          </div>
+          <div className="absolute bottom-0 text-green-200 pl-10 transform rotate-3">
+            (This course is only $35!)
+          </div>
+        </div>
       </div>
     </div>
   );
