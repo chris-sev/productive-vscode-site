@@ -2,8 +2,8 @@ export default function BigReasons() {
   return (
     <div className="relative px-8 max-w-7xl mx-auto">
       {/* absolute rectangles */}
-      <div className="absolute -top-5 right-0 h-24 w-48 rounded-lg bg-gradient-to-br from-gray-500 to-gray-800"></div>
-      <div className="absolute -top-12 right-8 h-20 w-20 rounded-lg bg-gradient-to-br from-blue-400 to-blue-500"></div>
+      <div className="absolute -top-5 right-0 h-24 w-48 rounded-lg bg-gradient-to-br from-gray-600 to-gray-800"></div>
+      <div className="absolute -top-12 right-8 h-20 w-20 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500"></div>
 
       <div className="relative mb-20 space-y-5">
         <h2 className="font-bold text-gray-800 text-6xl">
@@ -12,9 +12,9 @@ export default function BigReasons() {
         <p className="text-gray-700 text-5xl"></p>
       </div>
 
-      <div className="relative space-y-12 text-gray-700">
-        <h3 className="font-extrabold text-4xl lg:text-8xl flex items-center">
-          <span className="w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-green-400 to-green-500">
+      <div className="relative space-y-12 text-gray-700 transform -translate-x-12">
+        <h3 className="group font-extrabold text-4xl lg:text-8xl flex items-center">
+          <span className="transform translate-x-12 group-hover:translate-x-0 transition duration-200 ease-in-out w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-green-400 to-green-500">
             <svg
               className="h-16 w-16 text-green-200"
               xmlns="http://www.w3.org/2000/svg"
@@ -36,8 +36,8 @@ export default function BigReasons() {
           </span>
         </h3>
 
-        <h3 className="font-extrabold text-4xl lg:text-8xl flex items-center">
-          <span className="w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-red-400 to-red-500">
+        <h3 className="group font-extrabold text-4xl lg:text-8xl flex items-center">
+          <span className="transform translate-x-12 group-hover:translate-x-0 transition duration-200 ease-in-out w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-red-400 to-red-500">
             <svg
               className="h-16 w-16 text-red-200"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,8 +59,8 @@ export default function BigReasons() {
           </span>
         </h3>
 
-        <h3 className="font-extrabold text-4xl lg:text-8xl flex items-center">
-          <span className="w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-blue-400 to-blue-500">
+        <h3 className="group font-extrabold text-4xl lg:text-8xl flex items-center">
+          <span className="transform translate-x-12 group-hover:translate-x-0 transition duration-200 ease-in-out w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-blue-400 to-blue-500">
             <svg
               className="h-16 w-16 text-blue-200"
               xmlns="http://www.w3.org/2000/svg"

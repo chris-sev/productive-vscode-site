@@ -13,8 +13,8 @@ export default function VSCode() {
   return (
     <div className="relative px-8">
       {/* background gradients */}
-      <div className="absolute top-0 left-10 z-10 bg-gradient-to-br from-purple-500 to-indigo-800 rounded-lg h-1/2 w-3/4"></div>
-      <div className="absolute top-72 lg:top-80 left-16 lg:left-20 z-20 bg-gradient-to-br from-green-500 to-blue-800 rounded-lg h-96 w-1/2"></div>
+      <div className="absolute top-0 left-10 z-10 bg-gradient-to-br from-purple-500 to-indigo-800 rounded-lg h-1/2 w-full lg:w-3/4"></div>
+      <div className="absolute top-96 lg:top-80 left-16 lg:left-20 z-20 bg-gradient-to-br from-green-500 to-blue-800 rounded-lg h-96 w-1/2"></div>
 
       {/* tagline */}
       <div className="relative z-50 pt-20 pb-16 pl-24">
