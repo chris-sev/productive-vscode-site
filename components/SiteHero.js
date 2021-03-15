@@ -17,13 +17,13 @@ export default function SiteHero() {
         </h1>
 
         {/* paragraph */}
-        <p className="text-indigo-50 text-xl lg:text-2xl">
+        <div className="text-indigo-50 text-xl lg:text-2xl flex justify-center items-center">
           Change the way you VS Code in{" "}
-          <span className="text-white font-extrabold">
+          <div className="text-white font-extrabold ml-2">
             <One /> hour
-          </span>
+          </div>
           .
-        </p>
+        </div>
 
         <GetSamplesForm />
       </div>
@@ -33,21 +33,21 @@ export default function SiteHero() {
 
 function One() {
   return (
-    <span className="inline-block relative">
+    <div className="inline-block relative">
       {/* top lines */}
       <div
-        className="absolute -top-2.5 -left-2.5 w-0.5 h-3 bg-yellow-200 transform"
+        className="absolute -top-2.5 -left-2.5 w-0.5 h-3 bg-red-500 transform"
         style={{ "--tw-rotate": "-50deg" }}
       />
-      <div className="absolute -top-4 left-2 w-0.5 h-3 bg-yellow-200" />
+      <div className="absolute -top-4 left-1.5 w-0.5 h-3 bg-yellow-500" />
       <div
-        className="absolute -top-2.5 -right-2.5 w-0.5 h-3 bg-yellow-200 transform"
+        className="absolute -top-2.5 -right-2.5 w-0.5 h-3 bg-blue-500 transform"
         style={{ "--tw-rotate": "50deg" }}
       />
 
       {/* bottom lines */}
 
-      <span>1</span>
-    </span>
+      <div>1</div>
+    </div>
   );
 }

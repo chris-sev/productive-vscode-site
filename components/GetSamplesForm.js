@@ -23,8 +23,8 @@ export default function GetSamplesForm() {
         onSubmit={trackForFathom}
         ref={formEl}
         className="md:flex md:shadow rounded-lg"
-        action="https://static.mailerlite.com/webforms/submit/k0w7t1"
-        data-code="k0w7t1"
+        action="https://static.mailerlite.com/webforms/submit/m4l6b8"
+        data-code="m4l6b8"
         method="post"
         target="_blank"
       >
@@ -42,7 +42,7 @@ export default function GetSamplesForm() {
 
         <button
           type="submit"
-          className="rounded-b-lg md:rounded-l-none md:rounded-r-lg w-full md:w-auto py-3 px-3 md:px-5 bg-yellow-300 hover:bg-yellow-200 text-yellow-900 hover:text-white focus:outline-none font-bold transition duration-200"
+          className="rounded-b-lg md:rounded-l-none md:rounded-r-lg w-full md:w-auto py-3 px-3 md:px-5 bg-yellow-300 hover:bg-yellow-200 text-yellow-900 hover:text-black focus:outline-none font-bold transition duration-200"
         >
           Get Updates
         </button>

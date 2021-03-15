@@ -10,7 +10,7 @@ export default function TimeIsMoney() {
   const moneySavedPerYear = (hoursSavedPerYear * hourlyRate).toLocaleString();
 
   return (
-    <div className="relative">
+    <div className="relative pb-72">
       <div className="absolute inset-x-0 top-28 lg:top-56 w-full h-96 transform -skew-y-6 bg-green-500"></div>
 
       {/* header */}

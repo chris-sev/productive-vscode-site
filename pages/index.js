@@ -19,9 +19,9 @@ export default function Home() {
       </Head>
 
       {/* <PPPBar price={35} /> */}
-      <SiteHeader />
+      {/* <SiteHeader /> */}
 
-      <main className="space-y-56">
+      <main className="mt-8 space-y-56">
         <SiteHero />
         <BigReasons />
         <VSCode />
