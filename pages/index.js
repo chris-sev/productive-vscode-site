@@ -6,6 +6,7 @@ import BigReasons from "../components/BigReasons";
 import VSCode from "../components/VSCode/VSCode";
 import Pricing from "../components/Pricing";
 import TimeIsMoney from "../components/TimeIsMoney";
+import BetterDevFooter from "../components/BetterDevFooter";
 
 export default function Home() {
   const { coupon, discount, country, finalPrice } = usePPP(35);
@@ -34,6 +35,7 @@ export default function Home() {
       </main>
 
       <footer></footer>
+      <BetterDevFooter />
     </>
   );
 }
