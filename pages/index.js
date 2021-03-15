@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <PPPBar price={35} />
+      {/* <PPPBar price={35} /> */}
       <SiteHeader />
 
       <main className="space-y-56">
@@ -28,7 +28,7 @@ export default function Home() {
         <TimeIsMoney />
 
         {/* what youll learn */}
-        <Pricing coupon={coupon} discount={discount} price={finalPrice} />
+        {/* <Pricing coupon={coupon} discount={discount} price={finalPrice} /> */}
         {/* whats in the course */}
         {/* faq */}
         {/* who am i */}

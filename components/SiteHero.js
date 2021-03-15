@@ -1,55 +1,31 @@
 import Image from "next/image";
+import GetSamplesForm from "./GetSamplesForm";
 
 export default function SiteHero() {
   return (
-    <div className="px-8">
-      <div className="relative min-h-screen bg-gradient-to-br from-indigo-600 via-purple-700 to-purple-900 rounded-lg overflow-hidden lg:grid lg:grid-cols-2 gap-x-10">
-        {/* content */}
-        <div className="flex flex-col justify-center p-20 space-y-8">
-          {/* giant title */}
-          <h1 className="leading-none text-white font-extrabold fancy">
-            <span className="block text-xl lg:text-2xl mb-3 lg:mb-5 uppercase tracking-wider text-purple-200">
-              Productive
-            </span>{" "}
-            <span className="block text-4xl lg:text-7xl tracking-tigher">
-              VS Code
-            </span>
-          </h1>
+    <div className="mx-8 py-28 text-center relative bg-gradient-to-br from-indigo-600 via-purple-700 to-purple-900 rounded-lg overflow-hidden flex items-center justify-center">
+      {/* content */}
+      <div className="flex flex-col justify-center p-20 space-y-12 w-full">
+        {/* giant title */}
+        <h1 className="leading-none text-white font-extrabold fancy">
+          <span className="block text-xl lg:text-4xl mb-3 lg:mb-5 uppercase tracking-wider text-purple-200">
+            Productive
+          </span>{" "}
+          <span className="block text-4xl lg:text-9xl tracking-tigher">
+            VS Code
+          </span>
+        </h1>
 
-          {/* paragraph */}
-          <p className="text-indigo-50 text-xl lg:text-2xl">
-            Change the way you VS Code in{" "}
-            <span className="text-white font-extrabold">
-              <One /> hour
-            </span>
-            .
-          </p>
+        {/* paragraph */}
+        <p className="text-indigo-50 text-xl lg:text-2xl">
+          Change the way you VS Code in{" "}
+          <span className="text-white font-extrabold">
+            <One /> hour
+          </span>
+          .
+        </p>
 
-          {/* buy now */}
-          <a
-            href="#"
-            className="flex justify-between items-center text-lg lg:text-3xl py-4 lg:py-8 px-6 rounded-xl bg-gradient-to-br from-yellow-400 to-yellow-500 hover:bg-yellow-300 font-bold text-black hover:text-black hover:shadow-2xl transition duration-300"
-          >
-            <span>Buy the Course</span>
-            <span className="text-5xl flex">
-              35<span className="text-yellow-700 text-sm self-start">$</span>
-            </span>
-          </a>
-        </div>
-
-        {/* cool vs code preview with buttons */}
-        {/* <div className="absolute top-20 -bottom-10 -right-10 shadow-2xl"> */}
-        <div className="relative h-full w-full mt-20 rounded-tl-lg rounded-br-lg">
-          <Image
-            src="/vscode.png"
-            layout="fill"
-            objectPosition="left"
-            objectFit="cover"
-            sizes="50vw"
-            className="rounded-tl-lg rounded-br-lg"
-          />
-        </div>
-        {/* </div> */}
+        <GetSamplesForm />
       </div>
     </div>
   );
