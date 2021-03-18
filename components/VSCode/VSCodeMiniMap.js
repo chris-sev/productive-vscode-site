@@ -1,3 +1,3 @@
 export default function VSCodeMinimap() {
-  return <div className="text-white">minimap</div>;
+  return <div className="minimap text-white">minimap</div>;
 }

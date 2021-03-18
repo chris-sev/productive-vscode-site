@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@monaco-editor/react": "^4.0.11",
+    "@tailwindcss/jit": "^0.1.3",
     "adblock-detect-react": "^1.0.4",
     "fathom-client": "^3.0.0",
     "next": "10.0.7",

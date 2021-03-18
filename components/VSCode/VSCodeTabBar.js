@@ -1,6 +1,6 @@
 export default function VSCodeTabBar() {
   return (
-    <div className="flex bg-gray-900">
+    <div className="tab-bar flex bg-gray-900">
       <button
         className="py-3 px-8 text-gray-400 cursor-pointer focus:outline-none"
         style={{ background: "#1e1e1e" }}

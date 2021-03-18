@@ -1,6 +1,6 @@
 export default function VSCodeActivityBar() {
   return (
-    <div className="h-full bg-gray-700 text-gray-500 flex flex-col justify-between py-2 text-center">
+    <div className="activity-bar h-full bg-gray-700 text-gray-500 flex flex-col justify-between py-2 text-center">
       {/* top icons */}
       <div className="flex flex-col">
         {/* files */}

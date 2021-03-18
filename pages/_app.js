@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { load, trackPageview } from "fathom-client";
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
+import "../styles/VSCode.css";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

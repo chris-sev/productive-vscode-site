@@ -1,0 +1,28 @@
+.vscode .activity-bar,
+.vscode .header,
+.vscode .tab-bar,
+.vscode .content,
+.vscode .explorer,
+.vscode .minimap,
+.vscode .status-bar {
+  transition: 0.3s ease-in-out all;
+}
+
+/* minimalist */
+.vscode.is-minimal .vscode-inner {
+  @apply grid-cols-[0,0,1fr] px-48 rounded-lg;
+}
+
+.vscode.is-minimal .vscode-main {
+  @apply border-l border-r border-gray-700;
+}
+
+.vscode.is-minimal .activity-bar {}
+.vscode.is-minimal .header {}
+.vscode.is-minimal .tab-bar {}
+.vscode.is-minimal .content {}
+.vscode.is-minimal .explorer {}
+.vscode.is-minimal .minimap {}
+.vscode.is-minimal .status-bar {
+  transform: translateY(150%);
+}

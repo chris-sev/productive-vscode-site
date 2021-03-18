@@ -18,17 +18,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <PPPBar price={35} /> */}
-      {/* <SiteHeader /> */}
+      <PPPBar price={35} />
+      <SiteHeader />
 
-      <main className="mt-8 space-y-56">
+      <main className="space-y-56">
         <SiteHero />
         <BigReasons />
         <VSCode />
         <TimeIsMoney />
 
         {/* what youll learn */}
-        {/* <Pricing coupon={coupon} discount={discount} price={finalPrice} /> */}
+        <Pricing coupon={coupon} discount={discount} price={finalPrice} />
+
         {/* whats in the course */}
         {/* faq */}
         {/* who am i */}

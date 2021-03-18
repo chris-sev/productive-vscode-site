@@ -8,7 +8,10 @@ import VSCodeMiniMap from "./VSCodeMiniMap";
 import VSCodeStatusBar from "./VSCodeStatusBar";
 
 export default function VSCode() {
-  const [theme, setTheme] = useState("default");
+  const [theme, setTheme] = useState("is-default");
+
+  // theme
+  // is-minimal
 
   return (
     <div className="relative px-8">
@@ -16,8 +19,8 @@ export default function VSCode() {
       <div className="absolute top-0 left-10 z-10 bg-gradient-to-br from-purple-500 to-indigo-800 rounded-lg h-1/2 w-full lg:w-3/4"></div>
       <div className="absolute top-96 lg:top-80 left-16 lg:left-20 z-20 bg-gradient-to-br from-green-500 to-blue-800 rounded-lg h-96 w-1/2"></div>
 
-      {/* tagline */}
       <div className="relative z-50 pt-20 pb-16 pl-24">
+        {/* tagline */}
         <h2 className="mb-6 text-5xl font-extrabold text-white">
           Learn a workflow for every scenario
         </h2>
@@ -31,39 +34,49 @@ export default function VSCode() {
 
         {/* buttons */}
         <div className="lg:pl-24 grid grid-cols-8 lg:grid-cols-4 grid-rows-2 lg:grid-rows-1 gap-8">
-          <button className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg">
+          <button
+            className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg"
+            onClick={() => setTheme("is-everyday")}
+          >
             The Everyday Workflow
           </button>
-          <button className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg">
-            The Writer's Workflow
+          <button
+            className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg"
+            onClick={() => setTheme("is-javascript")}
+          >
+            The JavaScript Workflow
           </button>
-          <button className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg">
+          <button
+            className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg"
+            onClick={() => setTheme("is-minimal")}
+          >
             The Minimalist Workflow
           </button>
-          <button className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg">
+          <button
+            className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg"
+            onClick={() => setTheme("is-git")}
+          >
             The Git Workflow
           </button>
         </div>
       </div>
 
-      <div className="relative z-50 pl-12 lg:pl-24 rounded-lg overflow-hidden">
+      <div
+        className={`vscode relative z-50 pl-12 lg:pl-24 rounded-lg overflow-hidden ${theme}`}
+      >
         {/* header */}
         <VSCodeHeader />
 
         {/* main section */}
-        <main className="relative flex" style={{ minHeight: "800px" }}>
+        <main className="vscode-inner relative overflow-hidden grid grid-cols-[50px,300px,1fr] bg-[#1e1e1e] transition duration-300">
           {/* activity bar */}
-          <div className="w-16 flex-shrink">
-            <VSCodeActivityBar />
-          </div>
+          <VSCodeActivityBar />
 
           {/* explorer */}
-          <div className="w-72 flex-shrink">
-            <VSCodeExplorer />
-          </div>
+          <VSCodeExplorer />
 
-          {/* main content */}
-          <div className="flex-grow relative flex flex-col">
+          {/* content */}
+          <div className="vscode-main relative flex flex-col">
             <VSCodeTabBar />
             <div className="relative flex-grow">
               <VSCodeContent />
