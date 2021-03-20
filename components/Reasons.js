@@ -26,7 +26,7 @@ export default function Reasons() {
           text editor.
         </p>
         <p>
-          VS Code is already a feature packed editor with awesome things like:
+          VS Code is a feature packed editor with awesome things like:
           <ul className="text-xl mt-4 ml-6 text-gray-600 space-y-4">
             <li className="flex items-center space-x-2">
               <svg
