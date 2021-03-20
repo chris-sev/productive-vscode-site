@@ -79,7 +79,7 @@ export default function VSCode() {
           <div className="vscode-main relative flex flex-col">
             <VSCodeTabBar />
             <div className="relative flex-grow">
-              <VSCodeContent />
+              {/* <VSCodeContent /> */}
 
               <div className="absolute top-0 right-0 z-10">
                 <VSCodeMiniMap />

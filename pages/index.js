@@ -7,6 +7,7 @@ import VSCode from "../components/VSCode/VSCode";
 import Pricing from "../components/Pricing";
 import TimeIsMoney from "../components/TimeIsMoney";
 import BetterDevFooter from "../components/BetterDevFooter";
+import Reasons from "../components/Reasons";
 
 export default function Home() {
   const { coupon, discount, country, finalPrice } = usePPP(35);
@@ -21,8 +22,9 @@ export default function Home() {
       <PPPBar price={35} />
       <SiteHeader />
 
-      <main className="space-y-56">
+      <main className="space-y-60">
         <SiteHero />
+        <Reasons />
         <BigReasons />
         <VSCode />
         <TimeIsMoney />

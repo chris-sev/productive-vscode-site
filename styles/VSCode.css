@@ -10,7 +10,7 @@
 
 /* minimalist */
 .vscode.is-minimal .vscode-inner {
-  @apply grid-cols-[0,0,1fr] px-48 rounded-lg;
+  @apply grid-cols-[0,0,1fr] px-48 rounded-b-lg;
 }
 
 .vscode.is-minimal .vscode-main {

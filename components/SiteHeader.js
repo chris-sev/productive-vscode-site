@@ -1,6 +1,6 @@
 export default function SiteHeader() {
   return (
-    <nav className="py-10 text-gray-700">
+    <nav className="py-4 text-gray-700">
       <div className="px-8 flex justify-between items-center">
         {/* logo */}
         <div className="flex items-center">
@@ -25,7 +25,7 @@ export default function SiteHeader() {
           </a>
           <a
             href="https://learn.better.dev/login"
-            className="block py-2 px-4 rounded-lg bg-gradient-to-br from-indigo-400 to-purple-700 text-white"
+            className="block py-2 px-4 rounded-lg bg-gradient-to-br from-violet-600 via-purple-600 to-fuchsia-700 text-white"
           >
             Buy Course
           </a>
