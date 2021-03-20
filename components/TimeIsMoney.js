@@ -15,10 +15,10 @@ export default function TimeIsMoney() {
 
       {/* header */}
       <div className="relative space-y-5 text-center px-8">
-        <h2 className="text-black text-6xl lg:text-8xl font-extrabold">
+        <h2 className="text-black text-4xl lg:text-6xl font-extrabold">
           Your Time is Worth <Money />
         </h2>
-        <p className="text-gray-600 text-3xl lg:text-4xl">
+        <p className="text-gray-600 text-xl lg:text-3xl">
           Save{" "}
           <strong className="font-bold text-gray-800">
             {hoursSavedPerYear} hours
@@ -86,11 +86,11 @@ function Money() {
         style={{ animationDuration: "5s" }}
       />
       <MoneyIcon
-        className="h-6 lg:h-12 w-6 lg:w-12 text-green-400 absolute -top-2 -right-4 animate-spin"
+        className="h-6 lg:h-8 w-6 lg:w-8 text-green-400 absolute top-0 -right-4 animate-spin"
         style={{ animationDuration: "15s" }}
       />
       <MoneyIcon
-        className="h-7 lg:h-14 w-7 lg:w-14 text-green-400 absolute -bottom-2 left-1/2 animate-spin"
+        className="h-4 lg:h-10 w-4 lg:w-10 text-green-400 absolute -bottom-2 left-1/2 animate-spin"
         style={{ animationDuration: "8s" }}
       />
       <MoneyIcon
