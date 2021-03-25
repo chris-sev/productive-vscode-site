@@ -15,7 +15,7 @@ export default function GetSamplesForm() {
   }
 
   return (
-    <div className="bg-purple-400 bg-opacity-40 py-5 px-6 rounded lg:w-1/2 lg:max-w-3xl mx-auto lg:text-sm md:text-base text-left">
+    <div className="bg-purple-400 bg-opacity-40 py-5 px-6 rounded lg:w-1/2 lg:max-w-3xl mx-auto text-left">
       <p className="mb-3 text-purple-100">
         Get updates on when this course is released!
       </p>
