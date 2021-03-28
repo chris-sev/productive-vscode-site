@@ -1,17 +1,16 @@
-import Image from "next/image";
 import GetSamplesForm from "./GetSamplesForm";
 
 export default function SiteHero() {
   return (
     <div className="mx-8 py-16 text-center relative bg-gradient-to-br from-violet-400 via-purple-600 to-fuchsia-700 rounded-lg overflow-hidden flex items-center justify-center">
       {/* content */}
-      <div className="flex flex-col justify-center p-20 space-y-12 w-full">
+      <div className="flex flex-col justify-center py-12 px-5 lg:py-20 space-y-12 w-full">
         {/* giant title */}
         <h1 className="leading-none text-white font-extrabold fancy">
           <span className="block text-xl lg:text-4xl mb-3 lg:mb-5 uppercase tracking-wider text-purple-200">
             Productive
           </span>{" "}
-          <span className="block text-4xl lg:text-9xl tracking-tigher">
+          <span className="block text-5xl lg:text-9xl tracking-tigher">
             VS Code
           </span>
         </h1>
