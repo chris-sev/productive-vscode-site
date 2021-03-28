@@ -7,6 +7,7 @@ import VSCode from "../components/VSCode/VSCode";
 import Pricing from "../components/Pricing";
 import TimeIsMoney from "../components/TimeIsMoney";
 import BetterDevFooter from "../components/BetterDevFooter";
+import CommandPalette from "../components/CommandPalette";
 
 export default function Home() {
   const { coupon, discount, country, finalPrice } = usePPP(35);
@@ -18,6 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <CommandPalette />
       {/* <PPPBar price={35} /> */}
       {/* <SiteHeader /> */}
 

@@ -35,7 +35,7 @@ export default function GetSamplesForm() {
           type="email"
           name="fields[email]"
           placeholder="Enter Your Email"
-          autocomplete="email"
+          autoComplete="email"
         />
 
         <input type="hidden" name="ml-submit" value="1" />

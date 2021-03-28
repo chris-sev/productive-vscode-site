@@ -3,7 +3,7 @@ import { load, trackPageview } from "fathom-client";
 import "tailwindcss/tailwind.css";
 import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     load("IZCOEGMK", {
       includedDomains: ["productivevscode.com"],
@@ -14,5 +14,3 @@ function MyApp({ Component, pageProps }) {
 
   return <Component {...pageProps} />;
 }
-
-export default MyApp;
