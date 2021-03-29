@@ -2,7 +2,7 @@ import GetSamplesForm from "./GetSamplesForm";
 
 export default function SiteHero() {
   return (
-    <div className="mx-8 py-16 text-center relative bg-gradient-to-br from-violet-400 via-purple-600 to-fuchsia-700 rounded-lg overflow-hidden flex items-center justify-center">
+    <div className="mt-8 mx-8 py-16 text-center relative bg-gradient-to-br from-violet-400 via-purple-600 to-fuchsia-700 rounded-lg overflow-hidden flex items-center justify-center">
       {/* content */}
       <div className="flex flex-col justify-center py-12 px-5 lg:py-20 space-y-12 w-full">
         {/* giant title */}

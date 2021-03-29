@@ -5,5 +5,5 @@ export default function Pricing({ coupon, discount, price }) {
     } catch (e) {}
   }
 
-  return <div>pricing</div>;
+  return <div id="pricing">pricing</div>;
 }
