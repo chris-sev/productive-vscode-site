@@ -76,22 +76,26 @@ export default function Reasons() {
           and people will be asking you "<span role="img">🤯</span> how did you
           do that?!"
         </p>
-        <h2 className="text-4xl leading-relaxed py-4">
-          Hi I'm{" "}
-          <span className="font-extrabold bg-gradient-to-br from-violet-400 to-purple-500 bg-clip-text text-transparent">
-            Chris Sev
-          </span>
+        <h2 className="text-4xl leading-relaxed py-4 flex items-center">
+          <span>Hi I'm</span>{" "}
+          <a
+            href="https://twitter.com/chris__sev"
+            className="ml-2 font-extrabold bg-gradient-to-br from-violet-400 to-purple-500 bg-clip-text text-transparent flex items-center"
+          >
+            <span>Chris Sev</span>
+            <img src="/notion-avatar.jpg" className="h-16" />
+          </a>
           .
         </h2>
         <p>
-          I started my career because of a text editor. I was given a copy of a
+          I started my career in coding 20 years ago because of a text editor. I was given a copy of a
           text editor (Dreamweaver!). I looked at the price of Dreamweaver (too
           much for a kid) and thought "wow! this is expensive. i should try to
           figure this thing out." After seeing the terrible code Dreamweaver
           made, I learned to code to fix it.
         </p>
         <p>
-          I've been putting in countless hours into perfecting my text editor
+          I've put in countless hours into perfecting my text editor
           setups. From Dreamweaver, to Vim, to Notepad++, to Sublime Text, Atom,
           Brackets, and now the amazing VS Code.
         </p>
