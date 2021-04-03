@@ -5,10 +5,13 @@ import {
   PuzzleIcon,
   QrcodeIcon,
 } from "@heroicons/react/outline";
+import ReactTooltip from "react-tooltip";
 
 export default function Reasons() {
   return (
     <div className="lg:max-w-7xl mx-auto space-y-24">
+      <ReactTooltip />
+
       {/* header */}
       <div className="flex items-center justify-center">
         <h2 className="text-gray-700 text-5xl transform -rotate-1">
@@ -23,7 +26,6 @@ export default function Reasons() {
           </span>
         </h2>
       </div>
-
       {/* content */}
       <div className="lg:max-w-2xl mx-auto space-y-10 text-gray-700 text-2xl leading-relaxed">
         <p className="">
@@ -88,16 +90,17 @@ export default function Reasons() {
           .
         </h2>
         <p>
-          I started my career in coding 20 years ago because of a text editor. I was given a copy of a
-          text editor (Dreamweaver!). I looked at the price of Dreamweaver (too
-          much for a kid) and thought "wow! this is expensive. i should try to
-          figure this thing out." After seeing the terrible code Dreamweaver
-          made, I learned to code to fix it.
+          I started my career in coding 20 years ago because of a text editor. I
+          was given a copy of a text editor (Dreamweaver!). I looked at the
+          price of Dreamweaver (too much for a kid) and thought "wow! this is
+          expensive. i should try to figure this thing out." After seeing the
+          terrible code Dreamweaver made, I learned to code to fix it.
         </p>
         <p>
-          I've put in countless hours into perfecting my text editor
-          setups. From Dreamweaver, to Vim, to Notepad++, to Sublime Text, Atom,
-          Brackets, and now the amazing VS Code.
+          I've put in countless hours into perfecting my text editor setups.
+          From <span data-tip="hello world">Dreamweaver</span>, to Vim, to
+          Notepad++, to Sublime Text, Atom, Brackets, and now the amazing VS
+          Code.
         </p>
         <p>
           Thanks to my text editors, I've become a fast and efficient coder.
