@@ -1,3 +1,5 @@
+console.log("hi everybody!");
+
 export default function SiteHeader() {
   return (
     <nav className="py-10 text-gray-700">
