@@ -15,25 +15,23 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Productive VS Code 🔥</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <CommandPalette />
       {/* <PPPBar price={35} /> */}
       {/* <SiteHeader /> */}
 
       <main className="space-y-60">
         <SiteHero />
+        <div className="h-10" />
+        <div>
+          NOTE: MOVE THIS SOMEWHERE ELSE if you feel like you could be getting
+          more out of vs code, i promise you can!
+        </div>
         <Reasons />
         <BigReasons />
         <VSCode />
         <TimeIsMoney />
-
         {/* what youll learn */}
         <Pricing coupon={coupon} discount={discount} price={finalPrice} />
-
         {/* whats in the course */}
         {/* faq */}
         {/* who am i */}

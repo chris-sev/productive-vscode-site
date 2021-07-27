@@ -1,30 +1,63 @@
-import GetSamplesForm from "./GetSamplesForm";
+import SignupForm from "./SignupForm";
 
 export default function SiteHero() {
   return (
-    <div className="mt-8 mx-8 py-16 text-center relative bg-gradient-to-br from-violet-400 via-purple-600 to-fuchsia-700 rounded-lg overflow-hidden flex items-center justify-center">
-      {/* content */}
-      <div className="flex flex-col justify-center py-12 px-5 lg:py-20 space-y-12 w-full">
-        {/* giant title */}
-        <h1 className="leading-none text-white font-extrabold fancy">
-          <span className="block text-xl lg:text-4xl mb-3 lg:mb-5 uppercase tracking-wider text-purple-200">
-            Productive
-          </span>{" "}
-          <span className="block text-5xl lg:text-9xl tracking-tigher">
-            VS Code
-          </span>
-        </h1>
+    <div className="mt-8 mx-8 pt-28 pb-12 text-center relative bg-purple-600 rounded-lg border-4 border-purple-900">
+      {/* giant title */}
+      <h1 className="leading-none text-white font-extrabold fancy">
+        <span className="font-normal block text-xl lg:text-3xl mb-3 lg:mb-4 uppercase tracking-wider text-purple-200">
+          Productive
+        </span>{" "}
+        <span className="block text-5xl lg:text-9xl tracking-tigher">
+          VS Code
+        </span>
+      </h1>
 
-        {/* paragraph */}
-        <div className="text-indigo-50 text-xl lg:text-2xl flex justify-center items-center">
-          Change the way you VS Code in{" "}
-          <div className="text-white font-extrabold ml-2">
-            <One /> hour
-          </div>
-          .
+      {/* paragraph */}
+      <div className="mt-8 mb-12 text-indigo-50 text-xl lg:text-2xl flex justify-center items-center">
+        Change the way you VS Code in{" "}
+        <div className="text-white font-extrabold ml-2">
+          <One /> hour
         </div>
+        .
+      </div>
 
-        <GetSamplesForm />
+      <SignupForm />
+
+      {/* a 10x developer */}
+      <div className="transform translate-y-28 max-w-5xl mx-auto bg-purple-800 text-purple-100 border-4 border-purple-900 px-8 py-12 rounded">
+        <p className="text-3xl mb-12">
+          Every <strong className="font-extrabold text-white">10x</strong>{" "}
+          developer knows how to use their editor to the{" "}
+          <strong className="font-extrabold text-white">max</strong>
+        </p>
+
+        <div className="max-w-[65ch] mx-auto space-y-4 text-xl text-purple-300">
+          <p>
+            A 10x developer has the best{" "}
+            <strong className="border-b border-purple-400 text-white">
+              settings and extensions
+            </strong>
+          </p>
+          <p>
+            A 10x developer knows the{" "}
+            <strong className="border-b border-purple-400 text-white">
+              keyboard shortcuts
+            </strong>
+          </p>
+          <p>
+            A 10x developer employs{" "}
+            <strong className="border-b border-purple-400 text-white">
+              productive workflows
+            </strong>
+          </p>
+          <p>
+            <strong className="border-b border-purple-400 text-white">
+              You
+            </strong>{" "}
+            can be that 10x developer!
+          </p>
+        </div>
       </div>
     </div>
   );

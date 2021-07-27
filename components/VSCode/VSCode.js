@@ -21,16 +21,12 @@ export default function VSCode() {
 
       <div className="relative z-50 pt-20 pb-16 pl-24">
         {/* tagline */}
-        <h2 className="mb-6 text-5xl font-extrabold text-white">
-          Learn a workflow for every scenario
-        </h2>
-        <p className="mb-12 text-2xl text-pink-50 leading-relaxed">
-          You spend <span className="text-indigo-200 font-bold">90%</span> of
-          your coding in VS Code.
-          <br />
-          It's <strong className="font-extrabold">important</strong> to be fast
-          and efficient.
+        <p className="mb-2 text-2xl text-purple-50 leading-relaxed">
+          Don't just learn about settings and extensions.
         </p>
+        <h2 className="mb-12 text-5xl font-extrabold text-white">
+          Learn a workflow for every task
+        </h2>
 
         {/* buttons */}
         <div className="lg:pl-24 grid grid-cols-8 lg:grid-cols-4 grid-rows-2 lg:grid-rows-1 gap-8">
