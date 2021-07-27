@@ -35,7 +35,7 @@ export default function VSCode() {
             Don't just learn about settings and extensions.
           </p>
           <h2 className="mb-12 text-5xl font-extrabold text-white">
-            Learn a workflow for every task
+            Learn a workflow for every task...
           </h2>
 
           {/* buttons */}
@@ -100,10 +100,10 @@ export default function VSCode() {
       </div>
 
       {/* workflow for every language or framework */}
-      <div className="relative px-8 mt-20">
+      <div className="relative px-8 mt-24">
         {/* background gradients */}
         <div className="absolute top-0 left-10 z-10 bg-purple-500 rounded-lg h-3/4 w-full lg:w-3/4"></div>
-        <div className="absolute top-12 left-40 z-20 bg-blue-500 rounded-lg h-24 w-1/3"></div>
+        <div className="absolute -top-4 right-20 z-20 bg-purple-600 rounded-lg h-24 w-1/3"></div>
 
         <div className="relative z-50 pt-24 pl-24">
           {/* tagline */}

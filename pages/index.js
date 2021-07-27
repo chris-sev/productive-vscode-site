@@ -16,21 +16,25 @@ export default function Home() {
   return (
     <>
       <CommandPalette />
-      {/* <PPPBar price={35} /> */}
+      <PPPBar price={35} />
       {/* <SiteHeader /> */}
 
       <main className="space-y-60">
         <SiteHero />
-        <div className="h-10" />
+        <Reasons />
+        <BigReasons />
+        <VSCode />
+        {/* need something here */}
+        {/* vs code is awesome because... */}
+        <TimeIsMoney />
+        {/* do you feel like this? */}
         <div>
           NOTE: MOVE THIS SOMEWHERE ELSE if you feel like you could be getting
           more out of vs code, i promise you can!
         </div>
-        <Reasons />
-        <BigReasons />
-        <VSCode />
-        <TimeIsMoney />
         {/* what youll learn */}
+        {/* who this course is for */}
+        {/* who this course is not for */}
         <Pricing coupon={coupon} discount={discount} price={finalPrice} />
         {/* whats in the course */}
         {/* faq */}

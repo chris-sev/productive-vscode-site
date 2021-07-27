@@ -12,7 +12,7 @@ export default function TimeIsMoney() {
 
   return (
     <div className="relative pb-56">
-      <div className="absolute inset-x-0 top-28 lg:top-56 w-full h-96 transform -skew-y-6 bg-green-500"></div>
+      <div className="absolute inset-x-0 top-28 lg:top-44 w-full h-72 transform -skew-y-6 bg-green-500"></div>
 
       {/* header */}
       <div className="relative space-y-5 text-center px-8">
@@ -34,21 +34,26 @@ export default function TimeIsMoney() {
 
       {/* calculator */}
       <div className="relative mt-20 px-8 max-w-7xl mx-auto text-center grid grid-cols-11 gap-8">
-        <div className="col-span-3 space-y-5">
-          <input
-            className="block w-full py-5 px-10 bg-white focus:outline-none focus:bg-green-200 rounded-2xl text-center text-6xl lg:text-9xl shadow-2xl transform rotate-2"
-            type="text"
-            value={hourlyRate}
-            onChange={(e) => setHourlyRate(e.target.value)}
-          />
-          <div className="text-xl text-green-800 font-bold">My Hourly Rate</div>
+        <div className="col-start-3 col-span-3 space-y-5">
+          <div className="py-5 px-10 bg-white focus:bg-green-200 rounded-2xl text-center text-6xl lg:text-9xl shadow-2xl transform rotate-2">
+            <input
+              className="outline-none focus:outline-none w-full text-center"
+              type="text"
+              value={hourlyRate}
+              onChange={(e) => setHourlyRate(e.target.value)}
+            />
+            <div className="text-xl text-green-800 font-bold">
+              My Hourly Rate
+            </div>
+          </div>
         </div>
         <div className="font-mono font-extrabold flex items-center justify-center text-6xl lg:text-9xl bg-gradient-to-br from-purple-500 to-purple-900 text-transparent bg-clip-text pb-10">
           *
         </div>
         <div className="col-span-3 space-y-5">
+        <div className="py-5 px-10 bg-white focus:bg-green-200 rounded-2xl text-center text-6xl lg:text-9xl shadow-2xl transform -rotate-2">
           <input
-            className="block w-full py-5 px-10 bg-white focus:outline-none focus:bg-green-200 rounded-2xl text-center text-6xl lg:text-9xl shadow-2xl transform -rotate-2"
+            className="outline-none focus:outline-none w-full text-center"
             type="text"
             value={minutesSavedDaily}
             onChange={(e) => setMinutesSavedDaily(e.target.value)}
@@ -56,8 +61,9 @@ export default function TimeIsMoney() {
           <div className="text-xl text-green-800 font-bold">
             Minutes Saved Daily
           </div>
+          </div>
         </div>
-        <div className="font-mono font-extrabold flex items-center justify-center text-6xl lg:text-9xl bg-gradient-to-br from-purple-500 to-purple-900 text-transparent bg-clip-text pb-10 transform -rotate-2">
+        {/* <div className="font-mono font-extrabold flex items-center justify-center text-6xl lg:text-9xl bg-gradient-to-br from-purple-500 to-purple-900 text-transparent bg-clip-text pb-10 transform -rotate-2">
           =
         </div>
         <div className="col-span-3 relative space-y-5 flex flex-col justify-center items-center transform rotate-2">
@@ -73,7 +79,7 @@ export default function TimeIsMoney() {
           <div className="absolute -bottom-20 lg:bottom-0 text-green-200 pl-10 transform rotate-3">
             (This course is only $35!)
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

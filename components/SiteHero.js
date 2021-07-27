@@ -32,7 +32,7 @@ export default function SiteHero() {
           <strong className="font-extrabold text-white">max</strong>
         </p>
 
-        <div className="max-w-[65ch] mx-auto space-y-4 text-xl text-purple-300">
+        <div className="max-w-[65ch] mx-auto space-y-4 text-2xl text-purple-300">
           <p>
             A 10x developer has the best{" "}
             <strong className="border-b border-purple-400 text-white">
