@@ -7,7 +7,7 @@ import { BadgeCheckIcon } from "@heroicons/react/solid";
 
 export default function BigReasons() {
   return (
-    <div className="relative px-8 max-w-7xl mx-auto">
+    <div className="relative px-8 max-w-5xl mx-auto">
       {/* absolute rectangles */}
       <div className="absolute -top-5 right-0 h-24 w-48 rounded-lg bg-gradient-to-br from-gray-600 to-gray-800"></div>
       <div className="absolute -top-12 right-8 h-20 w-20 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500"></div>
