@@ -34,25 +34,25 @@ export default function SiteHero() {
 
         <div className="max-w-[65ch] mx-auto space-y-4 text-2xl text-purple-300">
           <p>
-            A 10x developer has the best{" "}
-            <strong className="border-b border-purple-400 text-white">
+            10x developers have the best{" "}
+            <strong className="border-b border-purple-400 text-purple-100">
               settings and extensions
             </strong>
           </p>
           <p>
-            A 10x developer knows the{" "}
-            <strong className="border-b border-purple-400 text-white">
+            10x developers know the{" "}
+            <strong className="border-b border-purple-400 text-purple-100">
               keyboard shortcuts
             </strong>
           </p>
           <p>
-            A 10x developer employs{" "}
-            <strong className="border-b border-purple-400 text-white">
+            10x developers employ{" "}
+            <strong className="border-b border-purple-400 text-purple-100">
               productive workflows
             </strong>
           </p>
           <p>
-            <strong className="border-b border-purple-400 text-white">
+            <strong className="border-b border-purple-400 text-purple-100">
               You
             </strong>{" "}
             can be that 10x developer!

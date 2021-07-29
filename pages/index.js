@@ -5,6 +5,7 @@ import SiteHero from "../components/SiteHero";
 import BigReasons from "../components/BigReasons";
 import VSCode from "../components/VSCode/VSCode";
 import Pricing from "../components/Pricing";
+import WhatYoullLearn from "../components/WhatYoullLearn";
 import TimeIsMoney from "../components/TimeIsMoney";
 import BetterDevFooter from "../components/BetterDevFooter";
 import Reasons from "../components/Reasons";
@@ -32,6 +33,7 @@ export default function Home() {
           NOTE: MOVE THIS SOMEWHERE ELSE if you feel like you could be getting
           more out of vs code, i promise you can!
         </div>
+        <WhatYoullLearn />
         {/* what youll learn */}
         {/* who this course is for */}
         {/* who this course is not for */}
