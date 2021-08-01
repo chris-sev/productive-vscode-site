@@ -10,6 +10,7 @@ import TimeIsMoney from "../components/TimeIsMoney";
 import BetterDevFooter from "../components/BetterDevFooter";
 import Reasons from "../components/Reasons";
 import CommandPalette from "../components/CommandPalette/CommandPalette";
+import FAQ from "../components/FAQ";
 
 export default function Home() {
   const { coupon, discount, country, finalPrice } = usePPP(35);
@@ -20,13 +21,15 @@ export default function Home() {
       <PPPBar price={35} />
       {/* <SiteHeader /> */}
 
-      <main className="space-y-60">
+      <main className="space-y-48">
         <SiteHero />
         <Reasons />
-        <BigReasons />
+
         <VSCode />
         {/* need something here */}
+        {/* any of these sound familiar? */}
         {/* vs code is awesome because... */}
+        <BigReasons />
         <TimeIsMoney />
         {/* do you feel like this? */}
         <div>
@@ -40,9 +43,9 @@ export default function Home() {
         <Pricing coupon={coupon} discount={discount} price={finalPrice} />
         {/* whats in the course */}
         {/* faq */}
+        <FAQ />
         {/* who am i */}
       </main>
-
       <footer></footer>
       <BetterDevFooter />
     </>

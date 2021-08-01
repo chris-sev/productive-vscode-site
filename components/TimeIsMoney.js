@@ -43,7 +43,7 @@ export default function TimeIsMoney() {
               onChange={(e) => setHourlyRate(e.target.value)}
             />
             <div className="text-xl text-green-800 font-bold">
-              My Hourly Rate
+              Your Hourly Rate
             </div>
           </div>
         </div>
