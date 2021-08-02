@@ -20,7 +20,6 @@ export default function Home() {
       <CommandPalette />
       <PPPBar price={35} />
       {/* <SiteHeader /> */}
-
       <main className="space-y-48">
         <SiteHero />
         <Reasons />
@@ -46,6 +45,7 @@ export default function Home() {
         <FAQ />
         {/* who am i */}
       </main>
+      test
       <footer></footer>
       <BetterDevFooter />
     </>
