@@ -6,6 +6,8 @@ const faqs = [
       "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
   },
   // More questions...
+  // who is this course for?
+  // who is this course not for?
 ];
 
 export default function FAQ() {

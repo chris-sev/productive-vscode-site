@@ -11,37 +11,32 @@ import BetterDevFooter from "../components/BetterDevFooter";
 import Reasons from "../components/Reasons";
 import CommandPalette from "../components/CommandPalette/CommandPalette";
 import FAQ from "../components/FAQ";
+import useInView from "react-cool-inview";
+import FloatingButton from "../components/FloatingButton";
+import ThisCourseIsForYou from "../components/ThisCourseIsForYou";
 
 export default function Home() {
   const { coupon, discount, country, finalPrice } = usePPP(35);
+  const { observe, inView } = useInView();
 
   return (
     <>
+      <FloatingButton isShowing={!inView} />
       <CommandPalette />
       <PPPBar price={35} />
       {/* <SiteHeader /> */}
       <main className="space-y-48">
-        <SiteHero />
-        <Reasons />
-
-        <VSCode />
-        {/* need something here */}
-        {/* any of these sound familiar? */}
-        {/* vs code is awesome because... */}
-        <BigReasons />
-        <TimeIsMoney />
-        {/* do you feel like this? */}
-        <div>
-          NOTE: MOVE THIS SOMEWHERE ELSE if you feel like you could be getting
-          more out of vs code, i promise you can!
+        <div ref={observe}>
+          <SiteHero />
         </div>
+        <Reasons />
+        <VSCode />
+        <ThisCourseIsForYou />
+        <TimeIsMoney />
         <WhatYoullLearn />
-        {/* what youll learn */}
-        {/* who this course is for */}
-        {/* who this course is not for */}
+        <BigReasons />
         <Pricing coupon={coupon} discount={discount} price={finalPrice} />
-        {/* whats in the course */}
-        {/* faq */}
+        {/* table of contents */}
         <FAQ />
         {/* who am i */}
       </main>

@@ -11,11 +11,14 @@ export default function TimeIsMoney() {
   const moneySavedPerYear = (hoursSavedPerYear * hourlyRate).toLocaleString();
 
   return (
-    <div className="relative pb-56">
-      <div className="absolute inset-x-0 top-28 lg:top-44 w-full h-72 transform -skew-y-6 bg-green-500"></div>
+    <div className="relative pb-20">
+      <div className="absolute inset-x-0 top-28 lg:top-56 w-full h-72 transform -skew-y-6 bg-green-500"></div>
 
       {/* header */}
-      <div className="relative space-y-5 text-center px-8">
+      <div className="relative space-y-8 text-center px-8">
+        <p className="text-gray-500 text-xl font-semibold">
+          Every trick you learn translates to money in your pocket because...
+        </p>
         <h2 className="text-black text-4xl lg:text-6xl font-extrabold">
           Your Time is Worth <Money />
         </h2>
@@ -51,16 +54,16 @@ export default function TimeIsMoney() {
           *
         </div>
         <div className="col-span-3 space-y-5">
-        <div className="py-5 px-10 bg-white focus:bg-green-200 rounded-2xl text-center text-6xl lg:text-9xl shadow-2xl transform -rotate-2">
-          <input
-            className="outline-none focus:outline-none w-full text-center"
-            type="text"
-            value={minutesSavedDaily}
-            onChange={(e) => setMinutesSavedDaily(e.target.value)}
-          />
-          <div className="text-xl text-green-800 font-bold">
-            Minutes Saved Daily
-          </div>
+          <div className="py-5 px-10 bg-white focus:bg-green-200 rounded-2xl text-center text-6xl lg:text-9xl shadow-2xl transform -rotate-2">
+            <input
+              className="outline-none focus:outline-none w-full text-center"
+              type="text"
+              value={minutesSavedDaily}
+              onChange={(e) => setMinutesSavedDaily(e.target.value)}
+            />
+            <div className="text-xl text-green-800 font-bold">
+              Minutes Saved Daily
+            </div>
           </div>
         </div>
         {/* <div className="font-mono font-extrabold flex items-center justify-center text-6xl lg:text-9xl bg-gradient-to-br from-purple-500 to-purple-900 text-transparent bg-clip-text pb-10 transform -rotate-2">

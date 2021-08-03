@@ -45,15 +45,15 @@ export default function Pricing({ coupon, discount, price }) {
 
       <div id="pricing" className="py-56 bg-indigo-600">
         <div className="relative px-8 max-w-7xl mx-auto">
-          <h1 className="text-center text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
+          <h1 className="text-center text-8xl font-extrabold tracking-tight text-white">
             Get the Course
           </h1>
-          <p className="text-center mt-4 text-xl text-indigo-100">
+          <p className="text-center mt-6 text-3xl text-indigo-100">
             Start making VS Code work for you.
           </p>
 
           {/* Cards */}
-          <div className="relative mt-8 max-w-2xl mx-auto px-4 pb-8 sm:mt-12 sm:px-6 lg:max-w-7xl lg:px-8 lg:pb-0">
+          <div className="relative mt-20 max-w-2xl mx-auto px-4 pb-8 sm:px-6 lg:max-w-7xl lg:px-8 lg:pb-0">
             {/* Decorative background */}
             <div
               aria-hidden="true"
@@ -152,7 +152,7 @@ export default function Pricing({ coupon, discount, price }) {
                             plan.featured
                               ? "bg-indigo-600 text-white hover:bg-indigo-700"
                               : "bg-white text-indigo-600 hover:bg-indigo-50",
-                            "mt-6 w-full inline-block py-4 px-8 border border-transparent rounded-md shadow-sm text-center text-sm font-medium sm:mt-0 sm:w-auto lg:mt-6 lg:w-full"
+                            "mt-6 w-full inline-block py-5 px-8 border border-transparent rounded-md shadow-sm text-center text-xl font-medium sm:mt-0 sm:w-auto lg:mt-6 lg:w-full"
                           )}"
                         >
                           Buy the ${plan.title}

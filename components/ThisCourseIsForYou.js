@@ -60,15 +60,15 @@ const features = [
   },
 ];
 
-export default function WhatYoullLearn() {
+export default function ThisCourseIsForYou() {
   return (
     <div className="mx-20 rounded bg-gray-700">
       <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-16">
         <h2 className="text-center text-3xl font-extrabold text-white tracking-tight">
-          What will you learn in this course?
+          Is this course for you?
         </h2>
         <p className="text-center mt-4 text-lg text-gray-200">
-        100+ tips & tricks. 50+ keyboard shortcuts. 50+ extensions.
+          Do any of these sound familiar?
         </p>
         <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
           {features.map((feature) => (
@@ -92,6 +92,10 @@ export default function WhatYoullLearn() {
             </div>
           ))}
         </div>
+
+        <h2 className="mt-16 text-center text-3xl font-extrabold text-white tracking-tight">
+          You could get be getting so much more out of VS Code.
+        </h2>
       </div>
     </div>
   );

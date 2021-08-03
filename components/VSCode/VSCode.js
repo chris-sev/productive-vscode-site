@@ -27,13 +27,10 @@ export default function VSCode() {
       <div className="relative px-8">
         {/* background gradients */}
         <div className="absolute top-0 left-10 z-10 bg-gradient-to-br from-purple-500 to-indigo-800 rounded-lg h-1/2 w-full lg:w-3/4"></div>
-        <div className="absolute top-96 lg:top-80 left-16 lg:left-20 z-20 bg-gradient-to-br from-green-500 to-blue-800 rounded-lg h-96 w-1/2"></div>
+        <div className="absolute top-72 left-16 lg:left-20 z-20 bg-gradient-to-br from-green-500 to-blue-800 rounded-lg h-96 w-1/2"></div>
 
         <div className="relative z-50 pt-20 pb-16 pl-24">
           {/* tagline */}
-          <p className="mb-2 text-2xl text-purple-50 leading-relaxed">
-            Don't just learn about settings and extensions.
-          </p>
           <h2 className="mb-12 text-5xl font-extrabold text-white">
             Learn a workflow for every task...
           </h2>
@@ -41,25 +38,25 @@ export default function VSCode() {
           {/* buttons */}
           <div className="lg:pl-24 grid grid-cols-8 lg:grid-cols-4 grid-rows-2 lg:grid-rows-1 gap-8">
             <button
-              className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg"
+              className="col-span-4 lg:col-span-1 py-8 px-12 rounded-full bg-gray-800 text-white font-bold text-lg"
               onClick={() => setTheme("is-everyday")}
             >
               The Everyday Workflow
             </button>
             <button
-              className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg"
+              className="col-span-4 lg:col-span-1 py-8 px-12 rounded-full bg-gray-800 text-white font-bold text-lg"
               onClick={() => setTheme("is-javascript")}
             >
               The JavaScript Workflow
             </button>
             <button
-              className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg"
+              className="col-span-4 lg:col-span-1 py-8 px-12 rounded-full bg-gray-800 text-white font-bold text-lg"
               onClick={() => setTheme("is-minimal")}
             >
               The Minimalist Workflow
             </button>
             <button
-              className="col-span-4 lg:col-span-1 py-8 px-12 rounded-lg bg-gray-800 text-white font-bold text-lg"
+              className="col-span-4 lg:col-span-1 py-8 px-12 rounded-full bg-gray-800 text-white font-bold text-lg"
               onClick={() => setTheme("is-git")}
             >
               The Git Workflow
@@ -100,15 +97,15 @@ export default function VSCode() {
       </div>
 
       {/* workflow for every language or framework */}
-      <div className="relative px-8 mt-24 max-w-6xl mx-auto">
+      <div className="relative px-8 mt-24 max-w-7xl mx-auto">
         {/* background gradients */}
         <div className="absolute top-12 left-10 z-10 bg-gray-100 rounded-lg h-3/4 w-full lg:w-3/4"></div>
         {/* <div className="absolute -top-4 right-20 z-20 bg-purple-600 rounded-lg h-24 w-1/3"></div> */}
 
         <div className="relative z-50 pt-24 pl-24">
           {/* tagline */}
-          <h2 className="mb-12 text-4xl font-extrabold text-gray-500">
-            <span className="block text-2xl mb-3">Learn settings and extensions for your</span>{" "}
+          <h2 className="mb-12 text-5xl font-extrabold text-gray-500">
+            <span className="block text-3xl mb-3">Learn settings and extensions for your</span>{" "}
             <span className="text-black tracking-wide">
               favorite language or framework
             </span>

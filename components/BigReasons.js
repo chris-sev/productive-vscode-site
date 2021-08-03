@@ -19,9 +19,9 @@ export default function BigReasons() {
         <p className="text-gray-700 text-5xl"></p>
       </div>
 
-      <div className="relative space-y-12 text-gray-700 transform -translate-x-12">
-        <h3 className="group font-extrabold text-4xl lg:text-8xl flex items-center">
-          <span className="transform translate-x-12 group-hover:translate-x-6 transition duration-200 ease-in-out w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-green-400 to-green-500">
+      <div className="relative space-y-8 text-gray-700 transform -translate-x-12">
+        <h3 className="group font-extrabold text-4xl lg:text-7xl flex items-center">
+          <span className="transform translate-x-10 group-hover:translate-x-6 transition duration-200 ease-in-out w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-green-400 to-green-500">
             <LightningBoltIcon className="h-16 w-16 text-green-200" />
           </span>
           <span>Code</span>
@@ -30,8 +30,8 @@ export default function BigReasons() {
           </span>
         </h3>
 
-        <h3 className="group font-extrabold text-4xl lg:text-8xl flex items-center">
-          <span className="transform translate-x-12 group-hover:translate-x-6 transition duration-200 ease-in-out w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-red-400 to-red-500">
+        <h3 className="group font-extrabold text-4xl lg:text-7xl flex items-center">
+          <span className="transform translate-x-10 group-hover:translate-x-6 transition duration-200 ease-in-out w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-red-400 to-red-500">
             <CakeIcon className="h-16 w-16 text-red-200" />
           </span>
           <span>Write</span>
@@ -40,8 +40,8 @@ export default function BigReasons() {
           </span>
         </h3>
 
-        <h3 className="group font-extrabold text-4xl lg:text-8xl flex items-center">
-          <span className="transform translate-x-12 group-hover:translate-x-6 transition duration-200 ease-in-out w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-blue-400 to-blue-500">
+        <h3 className="group font-extrabold text-4xl lg:text-7xl flex items-center">
+          <span className="transform translate-x-10 group-hover:translate-x-6 transition duration-200 ease-in-out w-28 py-6 mr-4 lg:mr-8 rounded-lg shadow-2xl flex items-center justify-center bg-gradient-to-br from-blue-400 to-blue-500">
             <CurrencyDollarIcon className="h-16 w-16 text-blue-200" />
           </span>
           <span>Get More</span>
@@ -50,7 +50,7 @@ export default function BigReasons() {
           </span>
         </h3>
 
-        <h3 className="group font-extrabold text-4xl lg:text-8xl flex items-center transform translate-x-12">
+        <h3 className="group font-extrabold text-4xl lg:text-7xl flex items-center transform translate-x-10">
           <BadgeCheckIcon className="h-32 w-32 text-yellow-400" />
           <span>
             Guaranteed
