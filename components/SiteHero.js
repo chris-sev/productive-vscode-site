@@ -26,6 +26,8 @@ export default function SiteHero() {
 
       {/* a 10x developer */}
       <div className="transform translate-y-28 max-w-5xl mx-auto bg-purple-800 text-purple-100 border-4 border-purple-900 px-8 py-12 rounded">
+        {/* become a 100000000x (<- in a css grid) developer */}
+
         <p className="text-3xl mb-12">
           Every <strong className="font-extrabold text-white">10x</strong>{" "}
           developer knows how to use their editor to the{" "}
