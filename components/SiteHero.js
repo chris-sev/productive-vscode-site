@@ -2,10 +2,10 @@ import SignupForm from "./SignupForm";
 
 export default function SiteHero() {
   return (
-    <div className="mt-8 mx-8 pt-28 pb-12 text-center relative bg-purple-600 rounded-lg border-4 border-purple-900">
+    <div className="pt-28 pb-12 text-center relative bg-purple-600 border-t-8 border-pink-400">
       {/* giant title */}
-      <h1 className="leading-none text-white font-extrabold fancy">
-        <span className="font-normal block text-xl lg:text-3xl mb-3 lg:mb-4 uppercase tracking-wider text-purple-200">
+      <h1 className="leading-none font-extrabold fancy text-white">
+        <span className="font-normal block text-xl lg:text-3xl mb-3 lg:mb-4 uppercase tracking-wider text-gray-200">
           Productive
         </span>{" "}
         <span className="block text-5xl lg:text-9xl tracking-tigher">
