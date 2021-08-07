@@ -1,8 +1,12 @@
 import SignupForm from "./SignupForm";
+import VSCode from "./VSCode/VSCode";
 
 export default function SiteHero() {
   return (
     <div className="pt-28 pb-12 text-center relative bg-purple-600 border-t-8 border-pink-400">
+
+      <VSCode />
+
       {/* giant title */}
       <h1 className="leading-none font-extrabold fancy text-white">
         <span className="font-normal block text-xl lg:text-3xl mb-3 lg:mb-4 uppercase tracking-wider text-gray-200">
